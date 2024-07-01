@@ -72,7 +72,7 @@ if game.PlaceId == 14328009401 then
 
     FarmingSection:AddToggle({
       Name = "Auto Farm Drive",
-      Flag = "FarmingSection_DriveFarm,
+      Flag = "FarmingSection_DriveFarm",
       Keybind = 1,
 
       Callback = function()
