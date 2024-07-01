@@ -1,7 +1,7 @@
 local library = loadstring(game:GetObjects("rbxassetid://7657867786")[1].Source)()
 local Wait = library.subs.Wait
 local hubName = "DuckerX | "
-print(hubname.." Running")
+print(hubName.." Running")
 
 --if game.PlaceId == 14328009401 then
     local PepsisWorld = library:CreateWindow({
@@ -9,27 +9,28 @@ print(hubname.." Running")
         Themeable = {
         Info = ""
         }
-        })
+      })
         
-        local GeneralTab = PepsisWorld:CreateTab({
+      local GeneralTab = PepsisWorld:CreateTab({
         Name = "General"
-        })
-        local FarmingSection = GeneralTab:CreateSection({
-        Name = "Farming"
-        })
+      })
 
-        FarmingSection:AddToggle({
+      local FarmingSection = GeneralTab:CreateSection({
+        Name = "Farming"
+      })
+
+      FarmingSection:AddToggle({
          Name = "Auto Pickup Blocks",
          Flag = "FarmingSection_AutoBlocks",
          Keybind = 1,
 
          Callback = function()
-                 getgenv().AutoBlocks = not getgenv().AutoBlocks
+               getgenv().AutoBlocks = not getgenv().AutoBlocks
                  
-                 while getgenv().FarmingSection_AutoBlocks == true do
-                    print("test")
-                    task.wait(0.1)
-                 end
-            end
-         })
+               while getgenv().FarmingSection_AutoBlocks == true do
+                  print("test")
+                  task.wait(0.1)
+               end
+         end
+      })
 --end
