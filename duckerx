@@ -1,7 +1,7 @@
 local library = loadstring(game:GetObjects("rbxassetid://7657867786")[1].Source)()
 local Wait = library.subs.Wait
 local hubName = "DuckerX | "
-print(hubName.." Running")
+print(hubName .. "Running")
 
 --if game.PlaceId == 14328009401 then
     local PepsisWorld = library:CreateWindow({
