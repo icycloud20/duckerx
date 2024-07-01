@@ -2,7 +2,7 @@ local library = loadstring(game:GetObjects("rbxassetid://7657867786")[1].Source)
 local Wait = library.subs.Wait
 local hubName = "DuckerX | "
 
-if game.PlaceId == 14328009401 then
+--if game.PlaceId == 14328009401 then
     local PepsisWorld = library:CreateWindow({
         Name = hubName.."BLock Mayhem",
         Themeable = {
@@ -31,4 +31,4 @@ if game.PlaceId == 14328009401 then
                  end
             end
          })
-end
+--end
