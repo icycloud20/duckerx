@@ -25,7 +25,7 @@ print(hubName .. "Running")
          Keybind = 1,
 
          Callback = function()
-               getgenv().AutoBlocks = not getgenv().AutoBlocks
+               getgenv().FarmingSection_AutoBlocks = not getgenv().FarmingSection_AutoBlocks
                  
                while getgenv().FarmingSection_AutoBlocks == true do
                   print("test")
